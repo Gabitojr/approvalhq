@@ -6,92 +6,91 @@ export default function Hero() {
     name: '',
     email: '',
     phone: '',
-    creditScore: '', // <-- Nuevo estado para el Credit Score
+    creditScore: '',
     smsOptIn: false
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('New lead:', formData);
+    console.log('Lead:', formData);
     alert('Application submitted successfully!');
   };
 
   return (
-    <section className="bg-[#0B1120] text-white py-20 lg:py-28">
+    <section className="bg-slate-50 pt-20 pb-28 relative border-b border-gray-200">
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center max-w-7xl">
-        {/* Text Content */}
-        <div>
-          <h1 className="text-4xl lg:text-6xl font-extrabold leading-tight mb-6">
-            Scale your business <span className="bg-white text-[#0B1120] px-2">not</span>
-            <br />
-            <span className="bg-white text-[#0B1120] px-2">your headcount</span>
+        
+        {/* Lado del Texto */}
+        <div className="pr-0 lg:pr-10">
+          <h1 className="text-5xl lg:text-7xl font-extrabold text-[#0B1120] leading-[1.1] mb-6 tracking-tight">
+            Scale your business <br />
+            <span className="text-[#F5C518]">not your headcount</span>
           </h1>
-          <p className="text-lg text-slate-300 mb-8">
-            Join the Silent Partnership LLC network. Expand your opportunities, receive competitive funding, and stay informed with our exclusive alerts.
+          <p className="text-lg text-slate-600 mb-8 leading-relaxed max-w-lg">
+            Join the Silent Partnership LLC affiliate network. Expand your opportunities, receive competitive commissions, and stay informed with our exclusive alerts.
           </p>
-          <div className="flex flex-col space-y-3 text-sm font-medium text-slate-300">
+          
+          <div className="space-y-4 text-sm font-bold text-[#0B1120]">
             <div className="flex items-center">
-              <svg fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 mr-2 text-green-400"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              <span className="text-[#F5C518] mr-3 font-extrabold text-xl">✓</span>
               <span>ROI-driven for our top partners</span>
             </div>
             <div className="flex items-center">
-              <svg fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 mr-2 text-green-400"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
-              <span>Transparent, on-time processes</span>
+              <span className="text-[#F5C518] mr-3 font-extrabold text-xl">✓</span>
+              <span>Transparent, on-time commissions</span>
             </div>
             <div className="flex items-center">
-              <svg fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 mr-2 text-green-400"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              <span className="text-[#F5C518] mr-3 font-extrabold text-xl">✓</span>
               <span>24/7 dedicated support</span>
             </div>
           </div>
         </div>
 
-        {/* SMS Opt-in Form */}
-        <div className="bg-[#151E32] border border-slate-800 p-8 rounded-xl shadow-2xl">
-          <h2 className="text-2xl font-bold mb-6 text-center text-white">
-            Apply Now
-          </h2>
-          <form onSubmit={handleSubmit} className="space-y-5">
+        {/* Formulario (Original) */}
+        <div id="apply" className="bg-white p-8 lg:p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] relative z-10 w-full max-w-lg mx-auto lg:ml-auto border border-gray-100">
+          <h2 className="text-2xl font-bold mb-6 text-[#0B1120]">Apply for Partnership</h2>
+          
+          <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm font-semibold mb-1 text-slate-300">Full Name</label>
+              <label className="block text-xs font-bold text-[#0B1120] uppercase mb-1">Full Name</label>
               <input 
                 type="text" 
                 required 
-                className="w-full bg-[#0B1120] border border-slate-700 text-white rounded-lg p-3 focus:ring-2 focus:ring-[#F5C518] focus:border-transparent outline-none transition-all" 
+                className="w-full bg-white border border-gray-300 text-slate-900 rounded p-3 focus:ring-2 focus:ring-[#F5C518] outline-none" 
                 placeholder="e.g. John Doe"
                 onChange={(e) => setFormData({...formData, name: e.target.value})}
               />
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm font-semibold mb-1 text-slate-300">Email Address</label>
+                <label className="block text-xs font-bold text-[#0B1120] uppercase mb-1">Email Address</label>
                 <input 
                   type="email" 
                   required 
-                  className="w-full bg-[#0B1120] border border-slate-700 text-white rounded-lg p-3 focus:ring-2 focus:ring-[#F5C518] focus:border-transparent outline-none transition-all" 
+                  className="w-full bg-white border border-gray-300 text-slate-900 rounded p-3 focus:ring-2 focus:ring-[#F5C518] outline-none" 
                   placeholder="you@email.com"
                   onChange={(e) => setFormData({...formData, email: e.target.value})}
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold mb-1 text-slate-300">Mobile Phone</label>
+                <label className="block text-xs font-bold text-[#0B1120] uppercase mb-1">Mobile Phone</label>
                 <input 
                   type="tel" 
                   required 
-                  className="w-full bg-[#0B1120] border border-slate-700 text-white rounded-lg p-3 focus:ring-2 focus:ring-[#F5C518] focus:border-transparent outline-none transition-all" 
-                  placeholder="+1 (555) 000-0000"
+                  className="w-full bg-white border border-gray-300 text-slate-900 rounded p-3 focus:ring-2 focus:ring-[#F5C518] outline-none" 
+                  placeholder="(555) 000-0000"
                   onChange={(e) => setFormData({...formData, phone: e.target.value})}
                 />
               </div>
             </div>
 
-            {/* Nuevo campo Credit Score */}
             <div>
-              <label className="block text-sm font-semibold mb-1 text-slate-300">Estimated Credit Score</label>
+              <label className="block text-xs font-bold text-[#0B1120] uppercase mb-1">Estimated Credit Score</label>
               <select 
                 required
                 defaultValue=""
-                className="w-full bg-[#0B1120] border border-slate-700 text-white rounded-lg p-3 focus:ring-2 focus:ring-[#F5C518] focus:border-transparent outline-none transition-all cursor-pointer"
+                className="w-full bg-white border border-gray-300 text-slate-900 rounded p-3 focus:ring-2 focus:ring-[#F5C518] outline-none cursor-pointer"
                 onChange={(e) => setFormData({...formData, creditScore: e.target.value})}
               >
                 <option value="" disabled>Select your credit score</option>
@@ -102,28 +101,24 @@ export default function Hero() {
               </select>
             </div>
             
-            {/* SMS Checkbox */}
-            <div className="flex items-start bg-[#0B1120] p-4 rounded-lg border border-slate-800 mt-2">
+            <div className="flex items-start bg-slate-50 p-3 rounded border border-gray-200 mt-2">
               <input 
                 type="checkbox" 
                 id="smsOptIn" 
                 required 
-                className="mt-1 mr-3 h-4 w-4 accent-[#F5C518] cursor-pointer shrink-0"
+                className="mt-1 mr-3 h-4 w-4 accent-[#0B1120] cursor-pointer shrink-0"
                 onChange={(e) => setFormData({...formData, smsOptIn: e.target.checked})}
               />
-              <label htmlFor="smsOptIn" className="text-xs text-slate-400 leading-relaxed cursor-pointer">
+              <label htmlFor="smsOptIn" className="text-[11px] text-slate-600 leading-relaxed cursor-pointer">
                 By checking this box, you agree to receive automated text messages (SMS) from Silent Partnership LLC for informational and marketing purposes. Message and data rates may apply. You can opt out at any time by replying STOP.
               </label>
             </div>
 
             <button 
               type="submit" 
-              className="w-full bg-[#F5C518] hover:bg-yellow-500 text-[#0B1120] font-bold py-3.5 rounded-lg transition-all flex justify-center items-center gap-2 mt-4"
+              className="w-full bg-[#F5C518] text-[#0B1120] font-bold text-lg py-4 rounded mt-4 hover:bg-yellow-500 transition-colors shadow-lg"
             >
-              <svg fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
-              </svg>
-              Request Access
+              Submit Application
             </button>
           </form>
         </div>

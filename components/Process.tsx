@@ -3,47 +3,48 @@ import React from 'react';
 export default function Process() {
   const steps = [
     {
-      number: "01",
-      title: "Apply & Get Approved",
-      description: "Submit your application through our secure form. Our team will review your profile and grant you access to the partner portal.",
+      number: "1",
+      title: "Apply Online",
+      description: "Complete a quick online application to join our partner network — it only takes a few seconds."
     },
     {
-      number: "02",
-      title: "Get Your Assets",
-      description: "Access your unique tracking links, API endpoints, and high-converting marketing materials ready to be deployed.",
+      number: "2",
+      title: "Get Approved",
+      description: "Most partners get approved the same day, giving you fast access to your custom portal and benefits."
     },
     {
-      number: "03",
+      number: "3",
       title: "Refer & Earn",
-      description: "Start sending qualified leads or direct calls. Track your conversions in real-time and receive your commissions on schedule.",
+      description: "Once approved, start sending qualified leads or direct calls. Track your conversions and receive your commissions."
     }
   ];
 
   return (
-    <section className="py-24 bg-[#0B1120] border-t border-slate-800">
-      <div className="container mx-auto px-6 max-w-7xl">
+    <section id="process" className="py-24 bg-slate-50">
+      <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-            How It Works
+          <h2 className="text-4xl font-bold text-[#0B1120] mb-4">
+            Simplify Your Partnership Journey
           </h2>
-          <p className="text-slate-400 max-w-2xl mx-auto">
-            Three simple steps to start monetizing your traffic and network with Silent Partnership.
-          </p>
+          <p className="text-xl text-slate-600">Start Earning in Three Easy Steps</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 relative">
-          {/* Connecting line for desktop */}
-          <div className="hidden md:block absolute top-12 left-[15%] right-[15%] h-[1px] bg-slate-800 z-0"></div>
-
+        {/* Tarjetas Apiladas Horizontalmente */}
+        <div className="space-y-6">
           {steps.map((step, idx) => (
-            <div key={idx} className="relative z-10 flex flex-col items-center text-center">
-              <div className="w-24 h-24 rounded-full bg-[#151E32] border-4 border-[#0B1120] flex items-center justify-center mb-6 shadow-xl">
-                <span className="text-2xl font-bold text-[#F5C518]">{step.number}</span>
+            <div key={idx} className="bg-white border border-gray-200 rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8 shadow-sm">
+              {/* Círculo Grande */}
+              <div className="flex-shrink-0 w-20 h-20 rounded-full bg-[#0B1120] flex items-center justify-center">
+                <span className="text-3xl font-bold text-white">{step.number}</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
-              <p className="text-slate-400 leading-relaxed max-w-sm">
-                {step.description}
-              </p>
+              
+              {/* Texto */}
+              <div className="text-center md:text-left mt-2">
+                <h3 className="text-2xl font-bold text-[#0B1120] mb-2">{step.title}</h3>
+                <p className="text-slate-600 leading-relaxed text-lg">
+                  {step.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

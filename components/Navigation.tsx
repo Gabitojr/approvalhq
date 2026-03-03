@@ -2,26 +2,31 @@ import React from 'react';
 
 export default function Navigation() {
   return (
-    <nav className="w-full bg-[#0B1120] border-b border-slate-800 py-4">
+    <nav className="w-full bg-[#0B1120] border-b border-slate-800 py-4 sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto px-6 flex justify-between items-center max-w-7xl">
         
-        {/* Aquí va tu Logo en PNG */}
+        {/* Tu Logo (Ahora resaltará perfecto sobre el fondo oscuro) */}
         <div className="flex items-center">
           <a href="/">
             <img 
               src="/logo2.png" 
               alt="Silent Partnership Logo" 
-              className="h-16 w-auto object-contain" // Ajusta h-12 (altura) según necesites
+              className="h-16 w-auto object-contain" 
             />
           </a>
         </div>
         
+        {/* Links en tono claro para contrastar con el Navbar */}
+        <div className="hidden md:flex items-center space-x-8 text-sm font-bold text-slate-300">
+          <a href="#features" className="hover:text-[#F5C518] transition-colors">Benefits</a>
+          <a href="#eligibility" className="hover:text-[#F5C518] transition-colors">Eligibility</a>
+          <a href="#process" className="hover:text-[#F5C518] transition-colors">How it Works</a>
+        </div>
+
+        {/* Botón de Acción en Dorado */}
         <div>
-          <a href="#contact" className="text-sm font-medium text-slate-300 hover:text-[#F5C518] transition-colors flex items-center gap-2">
-            <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 text-[#F5C518]">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.896-1.596-5.48-4.18-7.076-7.076l1.293-.97c.362-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-            </svg>
-            Partner Support
+          <a href="#apply" className="bg-[#F5C518] text-[#0B1120] px-6 py-3 rounded text-sm font-bold hover:bg-yellow-500 transition-colors shadow-md">
+            Apply Now
           </a>
         </div>
       </div>
