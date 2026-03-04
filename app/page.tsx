@@ -1,18 +1,26 @@
 import Navigation from "@/components/Navigation"
 import Hero from "@/components/Hero"
-import Features from "@/components/Features"
-import Footer from "@/components/Footer"
+import Eligibility from "@/components/Eligibility"
 import Process from "@/components/Process"
-import Elegibility from "@/components/Eligibility"
+import Features from "@/components/Features"
+import Testimonials from "@/components/Testimonials"
+import FAQ from "@/components/FAQ"
+import Contact from "@/components/Contact"
+import FinalCTA from "@/components/FinalCTA"
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
     <>
       <Navigation />
       <Hero />
-      <Features />
+      <Eligibility />
       <Process />
-      <Elegibility />
+      <Features />
+      <Testimonials />
+      <FAQ />
+      <Contact />
+      <FinalCTA />
       <Footer />
     </>
   )

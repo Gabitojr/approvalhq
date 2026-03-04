@@ -1,55 +1,62 @@
-import React from 'react';
+"use client"
+import { Zap, Lock, TrendingUp, Award, BarChart3 } from "lucide-react"
 
 export default function Features() {
   const features = [
     {
-      title: "Competitive Commissions",
-      description: "Generate consistent income with our attractive payout structure for every qualified client or lead you refer."
+      icon: Zap,
+      title: "Rapid Approvals",
+      desc: "Receive an answer within 24 hours. Skip the endless bank bureaucracy and waiting periods.",
     },
     {
-      title: "Exclusive Portal",
-      description: "Access advanced tools to monitor your performance, conversions, and commissions in real time."
+      icon: Lock,
+      title: "Zero Personal Collateral",
+      desc: "Safeguard your personal assets. Our funding decisions are driven by your business's true performance.",
     },
     {
-      title: "Marketing Materials",
-      description: "We provide the resources, banners, and proven copy so your generation campaigns succeed from day one."
+      icon: TrendingUp,
+      title: "Adaptable Repayment",
+      desc: "We structure terms that align with your natural revenue cycles, keeping your cash flow healthy.",
     },
     {
-      title: "Dedicated Partner Care",
-      description: "Receive personalized support and resources designed to help you grow and close more deals."
-    }
-  ];
+      icon: Award,
+      title: "Clear Cost Structure",
+      desc: "Full transparency from day one. You will never encounter hidden fees or unexpected charges.",
+    },
+    {
+      icon: BarChart3,
+      title: "Performance-Based Underwriting",
+      desc: "We look at the big picture—your revenue and momentum—not just a rigid credit score.",
+    },
+    {
+      icon: Zap,
+      title: "Dedicated Specialists",
+      desc: "A personalized funding advisor will be with you from application to deposit.",
+    },
+  ]
 
   return (
-    <section id="features" className="py-24 bg-white">
-      <div className="container mx-auto px-6 max-w-7xl flex flex-col lg:flex-row gap-16 items-center">
-        
-        {/* Lado izquierdo: Título */}
-        <div className="lg:w-1/3">
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1120] mb-6">
-            Why Partner <br/>with Us?
-          </h2>
-          <p className="text-slate-600 text-lg">
-            We designed our partner program to be simple, transparent, and highly profitable from day one.
-          </p>
-        </div>
-        
-        {/* Lado derecho: Lista apilada estilo GreenBridge */}
-        <div className="lg:w-2/3 space-y-4 w-full">
-          {features.map((feature, idx) => (
-            <div key={idx} className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:border-[#F5C518] transition-colors flex items-start">
-              <div className="text-2xl mr-4 mt-1">
-                <span className="text-[#22C55E]">✓</span>
+    <section id="features" className="py-24 bg-[#060A14]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-16 text-center">Why Partner With Us?</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature, i) => {
+            const Icon = feature.icon
+            return (
+              <div
+                key={i}
+                className="bg-[#151E32] rounded-xl p-8 border border-slate-800 hover:border-[#F5C518] hover:shadow-lg transition-all"
+              >
+                <div className="inline-block p-3 bg-[#0B1120] border border-slate-800 rounded-lg mb-5">
+                  <Icon className="w-6 h-6 text-[#F5C518]" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                <p className="text-slate-400 leading-relaxed">{feature.desc}</p>
               </div>
-              <div>
-                <h3 className="text-lg font-bold text-[#0B1120] mb-1">{feature.title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">{feature.description}</p>
-              </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
-
       </div>
     </section>
-  );
+  )
 }
