@@ -4,6 +4,12 @@ import Image from "next/image"
 
 export default function Footer() {
   const scrollToSection = (id: string) => {
+    // Si estamos en la página de términos, redirigir al inicio primero
+    if (window.location.pathname !== '/') {
+      window.location.href = `/#${id}`
+      return
+    }
+    
     const element = document.getElementById(id)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
@@ -79,7 +85,7 @@ export default function Footer() {
         <div className="border-t border-slate-800 pt-8 text-center text-xs flex flex-col items-center">
           <p className="mb-2">&copy; {new Date().getFullYear()} Fanscom Funding LLC. All rights reserved.</p>
           <p className="max-w-2xl text-slate-600">
-            By participating or applying, you agree to our Terms of Service and Privacy Policy. Consent is not a condition of purchase.
+            By participating or applying, you agree to our <Link href="/terms" className="text-slate-400 hover:text-[#F5C518] underline transition">Terms of Service and Privacy Policy</Link>. Consent is not a condition of purchase.
           </p>
         </div>
       </div>

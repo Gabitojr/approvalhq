@@ -18,23 +18,23 @@ export default function Navigation() {
           </Link>
         </div>
         <div className="hidden md:flex gap-8 items-center justify-center flex-1">
-          <a href="#eligibility" className="text-slate-300 hover:text-[#F5C518] transition font-medium">
+          <Link href="/#eligibility" className="text-slate-300 hover:text-[#F5C518] transition font-medium">
             Qualifications
-          </a>
-          <a href="#process" className="text-slate-300 hover:text-[#F5C518] transition font-medium">
+          </Link>
+          <Link href="/#process" className="text-slate-300 hover:text-[#F5C518] transition font-medium">
             How it Works
-          </a>
-          <a href="#features" className="text-slate-300 hover:text-[#F5C518] transition font-medium">
+          </Link>
+          <Link href="/#features" className="text-slate-300 hover:text-[#F5C518] transition font-medium">
             Benefits
-          </a>
-          <a href="#faq" className="text-slate-300 hover:text-[#F5C518] transition font-medium">
+          </Link>
+          <Link href="/#faq" className="text-slate-300 hover:text-[#F5C518] transition font-medium">
             FAQ
-          </a>
-          <a href="#contact" className="text-slate-300 hover:text-[#F5C518] transition font-medium">
+          </Link>
+          <Link href="/#contact" className="text-slate-300 hover:text-[#F5C518] transition font-medium">
             Contact
-          </a>
+          </Link>
         </div>
-        <Link href="#contact" className="inline-block">
+        <Link href="/#contact" className="inline-block">
           <button className="bg-[#F5C518] text-[#0B1120] px-6 py-2 rounded-lg hover:bg-yellow-500 transition font-bold shadow-md">
             Get Funded
           </button>
