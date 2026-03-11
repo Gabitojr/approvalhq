@@ -1,14 +1,21 @@
 "use client"
 import Link from "next/link"
+import { ArrowLeft } from "lucide-react"
 
 export default function Terms() {
   return (
     <section className="py-24 bg-[#0B1120] min-h-screen border-t border-slate-800">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
-          <Link href="/" className="text-[#F5C518] hover:text-yellow-500 transition font-medium flex items-center gap-2 mb-8">
-            ← Back to Home
+          {/* Botón de Back Mejorado */}
+          <Link 
+            href="/" 
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#151E32] border border-slate-800 text-slate-300 hover:text-[#0B1120] hover:bg-[#F5C518] hover:border-[#F5C518] transition-all font-medium mb-8 group shadow-sm w-fit"
+          >
+            <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
+            Back to Home
           </Link>
+          
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Terms of Service & Privacy Policy</h1>
           <p className="text-slate-400">Last Updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
         </div>
@@ -67,7 +74,7 @@ export default function Terms() {
             </p>
           </div>
 
-          {/* SMS TERMS SECTION (BLINDADO PARA TCPA Y FTSA FLORIDA) */}
+          {/* SMS TERMS SECTION */}
           <div>
             <h2 className="text-3xl font-bold text-white mb-6 border-b border-slate-800 pb-2">Part II: SMS/Text Messaging Terms</h2>
             <p className="mb-4">
@@ -112,7 +119,6 @@ export default function Terms() {
               You agree to indemnify, defend, and hold harmless Fanscom Funding LLC, its officers, directors, employees, and agents from any claims, liabilities, damages, and expenses (including legal fees) arising from your misuse of our services, violation of these Terms, or infringement of any third-party rights.
             </p>
 
-            {/* FLORIDA JURISDICTION SECTION */}
             <h3 className="text-xl font-bold text-white mb-3">6. Governing Law and Dispute Resolution</h3>
             <p className="mb-4">
               These Terms shall be governed by and construed in accordance with the laws of the State of Florida, without regard to its conflict of law principles. Any legal action or proceeding arising under these Terms will be brought exclusively in the federal or state courts located in the State of Florida.
