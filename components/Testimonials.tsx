@@ -16,7 +16,7 @@ export default function Testimonials() {
     {
       name: "Miguel Ortiz",
       company: "Logistics Fleet",
-      text: "Silent Partnership didn't just look at a spreadsheet; they understood our operations and became true catalysts for our growth.",
+      text: "Fanscom Funding didn't just look at a spreadsheet; they understood our operations and became true catalysts for our growth.",
     },
   ]
 

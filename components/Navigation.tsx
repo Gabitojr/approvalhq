@@ -10,7 +10,7 @@ export default function Navigation() {
           <Link href="/" className="inline-block">
             <Image
               src="/logo2.png"
-              alt="Silent Partnership Logo"
+              alt="Fanscom Funding Logo"
               className="h-16 w-auto object-contain"
               width={200}
               height={200}

@@ -19,7 +19,7 @@ export default function Footer() {
               <Link href="/" className="inline-block">
                 <Image
                   src="/logo.png"
-                  alt="Silent Partnership Logo"
+                  alt="Fanscom Funding Logo"
                   className="h-30 w-auto opacity-90 hover:opacity-100 transition"
                   width={200}
                   height={200}
@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-slate-800 pt-8 text-center text-xs flex flex-col items-center">
-          <p className="mb-2">&copy; {new Date().getFullYear()} Silent Partnership LLC. All rights reserved.</p>
+          <p className="mb-2">&copy; {new Date().getFullYear()} Fanscom Funding LLC. All rights reserved.</p>
           <p className="max-w-2xl text-slate-600">
             By participating or applying, you agree to our Terms of Service and Privacy Policy. Consent is not a condition of purchase.
           </p>

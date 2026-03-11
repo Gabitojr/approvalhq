@@ -113,7 +113,7 @@ export default function Contact() {
                 onChange={(e) => setFormData({ ...formData, smsOptIn: e.target.checked })}
               />
               <label htmlFor="smsOptIn" className="text-xs text-slate-400 leading-relaxed cursor-pointer">
-                By checking this box, you agree to receive automated text messages (SMS) from Silent Partnership LLC for informational and marketing purposes. Message and data rates may apply. You can opt out at any time by replying STOP.
+                By checking this box, you agree to receive automated text messages (SMS) from Fanscom Funding LLC for informational and marketing purposes. Message and data rates may apply. You can opt out at any time by replying STOP.
               </label>
             </div>
 
