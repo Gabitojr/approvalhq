@@ -328,7 +328,7 @@ export default function Contact() {
               type="submit"
               className="w-full bg-[#F5C518] text-[#0B1120] font-bold text-lg py-4 rounded-lg mt-8 hover:bg-yellow-500 transition-colors shadow-lg"
             >
-              Check My Eligibility
+              Submit my information
             </button>
           </form>
         </div>
