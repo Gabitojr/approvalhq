@@ -4,7 +4,6 @@ import Image from "next/image"
 
 export default function Footer() {
   const scrollToSection = (id: string) => {
-    // Si estamos en la página de términos, redirigir al inicio primero
     if (window.location.pathname !== '/') {
       window.location.href = `/#${id}`
       return
@@ -62,13 +61,8 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <p className="font-bold text-white mb-6 uppercase tracking-wider text-sm">Support</p>
+            <p className="font-bold text-white mb-6 uppercase tracking-wider text-sm">Support & Legal</p>
             <ul className="space-y-3 text-sm">
-              <li>
-                <button onClick={() => scrollToSection("testimonials")} className="hover:text-[#F5C518] transition text-left">
-                  Client Success
-                </button>
-              </li>
               <li>
                 <button onClick={() => scrollToSection("faq")} className="hover:text-[#F5C518] transition text-left">
                   FAQ
@@ -79,13 +73,24 @@ export default function Footer() {
                   Apply Now
                 </button>
               </li>
+              {/* Enlaces legales altamente visibles */}
+              <li className="pt-2">
+                <Link href="/privacy-policy" className="text-slate-300 hover:text-[#F5C518] transition font-medium text-left block">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms-of-service" className="text-slate-300 hover:text-[#F5C518] transition font-medium text-left block">
+                  Terms of Service
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
         <div className="border-t border-slate-800 pt-8 text-center text-xs flex flex-col items-center">
           <p className="mb-2">&copy; {new Date().getFullYear()} Fanscom Funding LLC. All rights reserved.</p>
           <p className="max-w-2xl text-slate-600">
-            By participating or applying, you agree to our <Link href="/terms" className="text-slate-400 hover:text-[#F5C518] underline transition">Terms of Service and Privacy Policy</Link>. Consent is not a condition of purchase.
+            By participating or applying, you agree to our <Link href="/terms-of-service" className="text-slate-400 hover:text-[#F5C518] underline transition">Terms of Service</Link> and <Link href="/privacy-policy" className="text-slate-400 hover:text-[#F5C518] underline transition">Privacy Policy</Link>. Consent is not a condition of purchase.
           </p>
         </div>
       </div>

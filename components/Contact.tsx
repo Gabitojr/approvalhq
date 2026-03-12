@@ -1,6 +1,7 @@
 "use client"
 import type React from "react"
 import { useState } from "react"
+import Link from "next/link"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -104,16 +105,16 @@ export default function Contact() {
               </select>
             </div>
 
-            <div className="flex items-start bg-[#0B1120] p-4 rounded-lg border border-slate-800 mt-2">
+            {/* CHECKBOX OPCIONAL PARA SMS (Sin el atributo "required") */}
+            <div className="flex items-start bg-[#0B1120] p-5 rounded-lg border border-slate-700 mt-4 shadow-inner">
               <input
                 type="checkbox"
                 id="smsOptIn"
-                required
-                className="mt-1 mr-3 h-4 w-4 accent-[#F5C518] cursor-pointer shrink-0"
+                className="mt-1 mr-4 h-5 w-5 accent-[#F5C518] cursor-pointer shrink-0 rounded"
                 onChange={(e) => setFormData({ ...formData, smsOptIn: e.target.checked })}
               />
-              <label htmlFor="smsOptIn" className="text-xs text-slate-400 leading-relaxed cursor-pointer">
-                By checking this box, you agree to receive automated text messages (SMS) from Fanscom Funding LLC for informational and marketing purposes. Message and data rates may apply. You can opt out at any time by replying STOP.
+              <label htmlFor="smsOptIn" className="text-sm text-slate-300 leading-relaxed cursor-pointer">
+                By checking this box, you provide your express written consent to receive automated text messages (SMS) from Fanscom Funding LLC for informational and marketing purposes. Message frequency varies. Message and data rates may apply. Reply HELP for help and STOP to cancel. Consent is not a condition of purchase. For more information, please review our <Link href="/privacy-policy" target="_blank" className="text-[#F5C518] font-bold hover:underline transition-all">Privacy Policy</Link> and <Link href="/terms-of-service" target="_blank" className="text-[#F5C518] font-bold hover:underline transition-all">Terms of Service</Link>.
               </label>
             </div>
 

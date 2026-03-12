@@ -74,7 +74,7 @@ export default function Terms() {
             </p>
           </div>
 
-          {/* SMS TERMS SECTION */}
+          {/* SMS TERMS SECTION (BLINDADO PARA TCPA Y FTSA FLORIDA) */}
           <div>
             <h2 className="text-3xl font-bold text-white mb-6 border-b border-slate-800 pb-2">Part II: SMS/Text Messaging Terms</h2>
             <p className="mb-4">
@@ -84,7 +84,7 @@ export default function Terms() {
               <li><strong>Program Description:</strong> Fanscom Funding LLC uses SMS messaging to provide critical updates on funding applications, account alerts, and tailored commercial marketing offers.</li>
               <li><strong>Message Frequency:</strong> Message frequency varies based on your interaction with our services.</li>
               <li><strong>Rates:</strong> <strong>Message and data rates may apply</strong> depending on your mobile carrier and plan. Fanscom Funding LLC does not charge for this service, but you are responsible for any standard SMS/MMS charges from your carrier.</li>
-              <li><strong>Opt-Out (STOP):</strong> You can cancel the SMS service at any time. To opt-out, simply text <strong>"STOP"</strong> to the number from which you received the message. After you send "STOP", we will send you a final confirmation message that you have been unsubscribed. You will no longer receive SMS messages from us.</li>
+              <li><strong>Opt-Out (STOP):</strong> You can cancel the SMS service at any time. To opt-out, simply text <strong>"STOP"</strong> to the number from which you received the message. Alternatively, you can email <strong>support@fanscomfunding.com</strong> to request to be opted out. After you send "STOP" or your email request is processed, we will send you a final confirmation message that you have been unsubscribed. You will no longer receive SMS messages from us.</li>
               <li><strong>Customer Care (HELP):</strong> If you are experiencing issues with the messaging program, reply with the keyword <strong>"HELP"</strong> for assistance, or contact us directly at support@fanscomfunding.com.</li>
               <li><strong>Carrier Liability:</strong> Mobile carriers (e.g., T-Mobile, AT&T, Verizon) are not liable for delayed or undelivered messages.</li>
             </ul>
