@@ -20,7 +20,7 @@ export default function Eligibility() {
               {[
                 "Flexible Credit Requirements (550+)",
                 "Minimum $50,000 Yearly Revenue",
-                "24+ Months of Active Operation",
+                "6 Months of Active Operation",
                 "Active Business Bank Account",
                 "Consistent Monthly Deposits",
               ].map((item, i) => (
