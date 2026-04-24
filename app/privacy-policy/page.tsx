@@ -12,7 +12,7 @@ export default function PrivacyPolicyPage() {
           <div className="mb-12">
             <Link 
               href="/" 
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#151E32] border border-slate-800 text-slate-300 hover:text-[#0B1120] hover:bg-[#F5C518] hover:border-[#F5C518] transition-all font-medium mb-8 group shadow-sm w-fit"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#151E32] border border-slate-800 text-slate-300 hover:text-white hover:bg-[#6366F1] hover:border-[#6366F1] transition-all font-medium mb-8 group shadow-sm w-fit"
             >
               <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
               Back to Home
@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
 
           <div className="space-y-8 text-slate-300 leading-relaxed">
             <p>
-              At Fanscom Funding LLC, we are committed to protecting your privacy. We collect information to evaluate your business for funding and to improve our services.
+              At ApprovalHQ LLC, we are committed to protecting your privacy. We collect information to evaluate your business for funding and to improve our services.
             </p>
 
             <h3 className="text-2xl font-bold text-white mb-3">1. Information We Collect</h3>
@@ -48,7 +48,7 @@ export default function PrivacyPolicyPage() {
             </p>
 
             {/* SECCIÓN CRÍTICA PARA APROBACIÓN SMS */}
-            <div className="bg-[#151E32] border-l-4 border-[#F5C518] p-6 rounded-r-lg mt-6 mb-6">
+            <div className="bg-[#151E32] border-l-4 border-[#6366F1] p-6 rounded-r-lg mt-6 mb-6">
               <h4 className="text-lg font-bold text-white mb-2">Mobile Information Sharing</h4>
               <p className="text-slate-300 font-medium">
                 We strictly respect your privacy regarding mobile communications. <strong>We do not share your personal data, mobile information, or SMS opt-in status with any third-party services, affiliates, or partners for marketing or promotional purposes.</strong> Furthermore, all the above categories exclude text messaging originator opt-in data and consent; <strong>this information will not be shared with any third parties.</strong>

@@ -14,7 +14,7 @@ export default function Eligibility() {
           {/* Business Focused */}
           <div className="bg-[#151E32] rounded-2xl p-8 border border-slate-800">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <CheckCircle2 className="text-[#F5C518]" /> Baseline Criteria
+              <CheckCircle2 className="text-[#6366F1]" /> Baseline Criteria
             </h3>
             <ul className="space-y-4">
               {[
@@ -25,7 +25,7 @@ export default function Eligibility() {
                 "Consistent Monthly Deposits",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="text-[#F5C518] font-bold">✓</span>
+                  <span className="text-[#6366F1] font-bold">✓</span>
                   <span className="text-slate-300">{item}</span>
                 </li>
               ))}
@@ -38,7 +38,7 @@ export default function Eligibility() {
           {/* What We Look At */}
           <div className="bg-[#151E32] rounded-2xl p-8 border border-slate-800">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <BarChart3 className="text-[#F5C518]" /> Key Evaluation Factors
+              <BarChart3 className="text-[#6366F1]" /> Key Evaluation Factors
             </h3>
             <ul className="space-y-4">
               {[
@@ -49,7 +49,7 @@ export default function Eligibility() {
                 "Business Growth Potential",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="text-[#F5C518] font-bold">✓</span>
+                  <span className="text-[#6366F1] font-bold">✓</span>
                   <span className="text-slate-300">{item}</span>
                 </li>
               ))}

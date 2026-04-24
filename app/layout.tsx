@@ -3,8 +3,8 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Fanscom Funding | Strategic Partner Program",
-  description: "Join the Fanscom Funding network. Generate consistent income with competitive commissions by referring qualified B2B leads and clients.",
+  title: "ApprovalHQ | 10DLC Application Platform",
+  description: "ApprovalHQ streamlines your 10DLC registration and campaign approval process. Fast, compliant, and built for scale.",
 }
 
 export default function RootLayout({

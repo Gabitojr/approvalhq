@@ -45,10 +45,10 @@ export default function Features() {
             return (
               <div
                 key={i}
-                className="bg-[#151E32] rounded-xl p-8 border border-slate-800 hover:border-[#F5C518] hover:shadow-lg transition-all"
+                className="bg-[#151E32] rounded-xl p-8 border border-slate-800 hover:border-[#6366F1] hover:shadow-lg transition-all"
               >
                 <div className="inline-block p-3 bg-[#0B1120] border border-slate-800 rounded-lg mb-5">
-                  <Icon className="w-6 h-6 text-[#F5C518]" />
+                  <Icon className="w-6 h-6 text-[#6366F1]" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
                 <p className="text-slate-400 leading-relaxed">{feature.desc}</p>

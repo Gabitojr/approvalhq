@@ -137,7 +137,7 @@ export default function Contact() {
                 <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">First Name</label>
                 <input
                   type="text"
-                  className={`w-full bg-[#0B1120] border ${errors.firstName ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#F5C518]'} text-white rounded-lg p-3.5 outline-none transition-all`}
+                  className={`w-full bg-[#0B1120] border ${errors.firstName ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#6366F1]'} text-white rounded-lg p-3.5 outline-none transition-all`}
                   placeholder="John"
                   value={formData.firstName}
                   onChange={(e) => handleChange('firstName', e.target.value)}
@@ -148,7 +148,7 @@ export default function Contact() {
                 <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Last Name</label>
                 <input
                   type="text"
-                  className={`w-full bg-[#0B1120] border ${errors.lastName ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#F5C518]'} text-white rounded-lg p-3.5 outline-none transition-all`}
+                  className={`w-full bg-[#0B1120] border ${errors.lastName ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#6366F1]'} text-white rounded-lg p-3.5 outline-none transition-all`}
                   placeholder="Doe"
                   value={formData.lastName}
                   onChange={(e) => handleChange('lastName', e.target.value)}
@@ -162,7 +162,7 @@ export default function Contact() {
                 <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Current Title</label>
                 <input
                   type="text"
-                  className={`w-full bg-[#0B1120] border ${errors.jobTitle ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#F5C518]'} text-white rounded-lg p-3.5 outline-none transition-all`}
+                  className={`w-full bg-[#0B1120] border ${errors.jobTitle ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#6366F1]'} text-white rounded-lg p-3.5 outline-none transition-all`}
                   placeholder="e.g. CEO, Director, Owner"
                   value={formData.jobTitle}
                   onChange={(e) => handleChange('jobTitle', e.target.value)}
@@ -172,7 +172,7 @@ export default function Contact() {
               <div>
                 <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Are you a decision maker?</label>
                 <select
-                  className={`w-full bg-[#0B1120] border ${errors.isDecisionMaker ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#F5C518]'} text-white rounded-lg p-3.5 outline-none transition-all cursor-pointer`}
+                  className={`w-full bg-[#0B1120] border ${errors.isDecisionMaker ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#6366F1]'} text-white rounded-lg p-3.5 outline-none transition-all cursor-pointer`}
                   value={formData.isDecisionMaker}
                   onChange={(e) => handleChange('isDecisionMaker', e.target.value)}
                 >
@@ -191,7 +191,7 @@ export default function Contact() {
                 <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Legal Business Name</label>
                 <input
                   type="text"
-                  className={`w-full bg-[#0B1120] border ${errors.businessName ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#F5C518]'} text-white rounded-lg p-3.5 outline-none transition-all`}
+                  className={`w-full bg-[#0B1120] border ${errors.businessName ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#6366F1]'} text-white rounded-lg p-3.5 outline-none transition-all`}
                   placeholder="Acme Corporation LLC"
                   value={formData.businessName}
                   onChange={(e) => handleChange('businessName', e.target.value)}
@@ -201,7 +201,7 @@ export default function Contact() {
               <div>
                 <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Industry Type</label>
                 <select
-                  className={`w-full bg-[#0B1120] border ${errors.industryType ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#F5C518]'} text-white rounded-lg p-3.5 outline-none transition-all cursor-pointer`}
+                  className={`w-full bg-[#0B1120] border ${errors.industryType ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#6366F1]'} text-white rounded-lg p-3.5 outline-none transition-all cursor-pointer`}
                   value={formData.industryType}
                   onChange={(e) => handleChange('industryType', e.target.value)}
                 >
@@ -216,7 +216,7 @@ export default function Contact() {
               <div>
                 <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Company Size</label>
                 <select
-                  className={`w-full bg-[#0B1120] border ${errors.companySize ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#F5C518]'} text-white rounded-lg p-3.5 outline-none transition-all cursor-pointer`}
+                  className={`w-full bg-[#0B1120] border ${errors.companySize ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#6366F1]'} text-white rounded-lg p-3.5 outline-none transition-all cursor-pointer`}
                   value={formData.companySize}
                   onChange={(e) => handleChange('companySize', e.target.value)}
                 >
@@ -228,7 +228,7 @@ export default function Contact() {
               <div>
                 <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Years in Business</label>
                 <select
-                  className={`w-full bg-[#0B1120] border ${errors.yearsInBusiness ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#F5C518]'} text-white rounded-lg p-3.5 outline-none transition-all cursor-pointer`}
+                  className={`w-full bg-[#0B1120] border ${errors.yearsInBusiness ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#6366F1]'} text-white rounded-lg p-3.5 outline-none transition-all cursor-pointer`}
                   value={formData.yearsInBusiness}
                   onChange={(e) => handleChange('yearsInBusiness', e.target.value)}
                 >
@@ -245,7 +245,7 @@ export default function Contact() {
               <div>
                 <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Annual Revenue</label>
                 <select
-                  className={`w-full bg-[#0B1120] border ${errors.annualRevenue ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#F5C518]'} text-white rounded-lg p-3.5 outline-none transition-all cursor-pointer`}
+                  className={`w-full bg-[#0B1120] border ${errors.annualRevenue ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#6366F1]'} text-white rounded-lg p-3.5 outline-none transition-all cursor-pointer`}
                   value={formData.annualRevenue}
                   onChange={(e) => handleChange('annualRevenue', e.target.value)}
                 >
@@ -257,7 +257,7 @@ export default function Contact() {
               <div>
                 <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Applicant FICO Score</label>
                 <select
-                  className={`w-full bg-[#0B1120] border ${errors.creditScore ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#F5C518]'} text-white rounded-lg p-3.5 outline-none transition-all cursor-pointer`}
+                  className={`w-full bg-[#0B1120] border ${errors.creditScore ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#6366F1]'} text-white rounded-lg p-3.5 outline-none transition-all cursor-pointer`}
                   value={formData.creditScore}
                   onChange={(e) => handleChange('creditScore', e.target.value)}
                 >
@@ -275,7 +275,7 @@ export default function Contact() {
               <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Desired Funding Amount ($)</label>
               <input
                 type="text"
-                className={`w-full bg-[#0B1120] border ${errors.requestedAmount ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#F5C518]'} text-white rounded-lg p-3.5 outline-none transition-all`}
+                className={`w-full bg-[#0B1120] border ${errors.requestedAmount ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#6366F1]'} text-white rounded-lg p-3.5 outline-none transition-all`}
                 placeholder="e.g. 50000"
                 value={formData.requestedAmount}
                 onChange={(e) => handleChange('requestedAmount', e.target.value)}
@@ -290,7 +290,7 @@ export default function Contact() {
                 <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Business Email</label>
                 <input
                   type="email"
-                  className={`w-full bg-[#0B1120] border ${errors.email ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#F5C518]'} text-white rounded-lg p-3.5 outline-none transition-all`}
+                  className={`w-full bg-[#0B1120] border ${errors.email ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#6366F1]'} text-white rounded-lg p-3.5 outline-none transition-all`}
                   placeholder="you@company.com"
                   value={formData.email}
                   onChange={(e) => handleChange('email', e.target.value)}
@@ -301,7 +301,7 @@ export default function Contact() {
                 <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Mobile Phone</label>
                 <input
                   type="tel"
-                  className={`w-full bg-[#0B1120] border ${errors.phone ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#F5C518]'} text-white rounded-lg p-3.5 outline-none transition-all`}
+                  className={`w-full bg-[#0B1120] border ${errors.phone ? 'border-red-500 focus:ring-red-500' : 'border-slate-700 focus:ring-[#6366F1]'} text-white rounded-lg p-3.5 outline-none transition-all`}
                   placeholder="(555) 000-0000"
                   value={formData.phone}
                   onChange={(e) => handleChange('phone', e.target.value)}
@@ -315,18 +315,18 @@ export default function Contact() {
               <input
                 type="checkbox"
                 id="smsOptIn"
-                className="mt-1 mr-4 h-5 w-5 accent-[#F5C518] cursor-pointer shrink-0 rounded"
+                className="mt-1 mr-4 h-5 w-5 accent-[#6366F1] cursor-pointer shrink-0 rounded"
                 checked={formData.smsOptIn}
                 onChange={(e) => handleChange('smsOptIn', e.target.checked)}
               />
               <label htmlFor="smsOptIn" className="text-sm text-slate-300 leading-relaxed cursor-pointer">
-                By checking this box, you provide your express written consent to receive automated text messages (SMS) from Fanscom Funding LLC for informational and marketing purposes. Message frequency varies. Message and data rates may apply. Reply HELP for help and STOP to cancel. Consent is not a condition of purchase. For more information, please review our <Link href="/privacy-policy" target="_blank" className="text-[#F5C518] font-bold hover:underline transition-all">Privacy Policy</Link> and <Link href="/terms-of-service" target="_blank" className="text-[#F5C518] font-bold hover:underline transition-all">Terms of Service</Link>.
+                By checking this box, you provide your express written consent to receive automated text messages (SMS) from ApprovalHQ LLC for informational and marketing purposes. Message frequency varies. Message and data rates may apply. Reply HELP for help and STOP to cancel. Consent is not a condition of purchase. For more information, please review our <Link href="/privacy-policy" target="_blank" className="text-[#6366F1] font-bold hover:underline transition-all">Privacy Policy</Link> and <Link href="/terms-of-service" target="_blank" className="text-[#6366F1] font-bold hover:underline transition-all">Terms of Service</Link>.
               </label>
             </div>
 
             <button
               type="submit"
-              className="w-full bg-[#F5C518] text-[#0B1120] font-bold text-lg py-4 rounded-lg mt-8 hover:bg-yellow-500 transition-colors shadow-lg"
+              className="w-full bg-[#6366F1] text-white font-bold text-lg py-4 rounded-lg mt-8 hover:bg-indigo-600 transition-colors shadow-lg"
             >
               Submit my information
             </button>
@@ -345,18 +345,18 @@ export default function Contact() {
               <X className="w-6 h-6" />
             </button>
             
-            <div className="mx-auto w-16 h-16 bg-[#F5C518]/10 rounded-full flex items-center justify-center mb-6">
-              <CheckCircle2 className="w-10 h-10 text-[#F5C518]" />
+            <div className="mx-auto w-16 h-16 bg-[#6366F1]/10 rounded-full flex items-center justify-center mb-6">
+              <CheckCircle2 className="w-10 h-10 text-[#6366F1]" />
             </div>
             
             <h3 className="text-3xl font-bold text-white mb-4">Request Received!</h3>
             <p className="text-slate-400 mb-8 leading-relaxed">
-              Our automated system at Fanscom Funding LLC is analyzing your details. A funding specialist will contact you shortly regarding your commercial eligibility.
+              Our automated system at ApprovalHQ LLC is analyzing your details. A funding specialist will contact you shortly regarding your commercial eligibility.
             </p>
             
             <button
               onClick={() => setShowModal(false)}
-              className="w-full bg-[#F5C518] text-[#0B1120] font-bold py-3 rounded-lg hover:bg-yellow-500 transition-colors"
+              className="w-full bg-[#6366F1] text-white font-bold py-3 rounded-lg hover:bg-indigo-600 transition-colors"
             >
               Done
             </button>

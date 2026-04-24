@@ -10,7 +10,7 @@ export default function Terms() {
           {/* Botón de Back Mejorado */}
           <Link 
             href="/" 
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#151E32] border border-slate-800 text-slate-300 hover:text-[#0B1120] hover:bg-[#F5C518] hover:border-[#F5C518] transition-all font-medium mb-8 group shadow-sm w-fit"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#151E32] border border-slate-800 text-slate-300 hover:text-white hover:bg-[#6366F1] hover:border-[#6366F1] transition-all font-medium mb-8 group shadow-sm w-fit"
           >
             <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
             Back to Home
@@ -25,7 +25,7 @@ export default function Terms() {
           {/* INTRODUCTION */}
           <div>
             <p className="mb-4">
-              Welcome to Fanscom Funding LLC. These Terms of Service and Privacy Policy govern your use of our website, applications, and services. By accessing or using our services, you agree to be bound by these terms. If you do not agree, please do not use our services.
+              Welcome to ApprovalHQ LLC. These Terms of Service and Privacy Policy govern your use of our website, applications, and services. By accessing or using our services, you agree to be bound by these terms. If you do not agree, please do not use our services.
             </p>
             <p className="mb-4">
               Our services are intended solely for businesses and commercial entities. We do not provide consumer loans or personal financial services.
@@ -61,7 +61,7 @@ export default function Terms() {
             <p className="mb-4">
               We may share your information with trusted third-party service providers (such as underwriting partners and secure data storage facilities) solely to facilitate our funding services. These parties are bound by strict confidentiality agreements. We do not sell, rent, or trade your personal information to outside marketers.
             </p>
-            <div className="bg-[#151E32] border-l-4 border-[#F5C518] p-6 rounded-r-lg mt-6 mb-6">
+            <div className="bg-[#151E32] border-l-4 border-[#6366F1] p-6 rounded-r-lg mt-6 mb-6">
               <h4 className="text-lg font-bold text-white mb-2">Mobile Information & SMS Opt-In Data Exclusion</h4>
               <p className="text-slate-300 font-medium">
                 We strictly respect your privacy regarding mobile communications. We will not share your opt-in to an SMS campaign with any third party for purposes unrelated to providing you with the services of that campaign. <strong>All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</strong>
@@ -78,14 +78,14 @@ export default function Terms() {
           <div>
             <h2 className="text-3xl font-bold text-white mb-6 border-b border-slate-800 pb-2">Part II: SMS/Text Messaging Terms</h2>
             <p className="mb-4">
-              By providing your mobile number, you provide your express written consent to receive automated promotional and informational text messages from Fanscom Funding LLC, which may be sent using an automated dialing system. <strong>I understand that I am not required to provide my consent as a condition of purchasing any products or services.</strong>
+              By providing your mobile number, you provide your express written consent to receive automated promotional and informational text messages from ApprovalHQ LLC, which may be sent using an automated dialing system. <strong>I understand that I am not required to provide my consent as a condition of purchasing any products or services.</strong>
             </p>
             <ul className="list-disc pl-6 space-y-4 mb-6">
-              <li><strong>Program Description:</strong> Fanscom Funding LLC uses SMS messaging to provide critical updates on funding applications, account alerts, and tailored commercial marketing offers.</li>
+              <li><strong>Program Description:</strong> ApprovalHQ LLC uses SMS messaging to provide critical updates on funding applications, account alerts, and tailored commercial marketing offers.</li>
               <li><strong>Message Frequency:</strong> Message frequency varies based on your interaction with our services.</li>
-              <li><strong>Rates:</strong> <strong>Message and data rates may apply</strong> depending on your mobile carrier and plan. Fanscom Funding LLC does not charge for this service, but you are responsible for any standard SMS/MMS charges from your carrier.</li>
-              <li><strong>Opt-Out (STOP):</strong> You can cancel the SMS service at any time. To opt-out, simply text <strong>"STOP"</strong> to the number from which you received the message. Alternatively, you can email <strong>support@fanscomfunding.com</strong> to request to be opted out. After you send "STOP" or your email request is processed, we will send you a final confirmation message that you have been unsubscribed. You will no longer receive SMS messages from us.</li>
-              <li><strong>Customer Care (HELP):</strong> If you are experiencing issues with the messaging program, reply with the keyword <strong>"HELP"</strong> for assistance, or contact us directly at support@fanscomfunding.com.</li>
+              <li><strong>Rates:</strong> <strong>Message and data rates may apply</strong> depending on your mobile carrier and plan. ApprovalHQ LLC does not charge for this service, but you are responsible for any standard SMS/MMS charges from your carrier.</li>
+              <li><strong>Opt-Out (STOP):</strong> You can cancel the SMS service at any time. To opt-out, simply text <strong>"STOP"</strong> to the number from which you received the message. Alternatively, you can email <strong>support@approvalhq.com</strong> to request to be opted out. After you send "STOP" or your email request is processed, we will send you a final confirmation message that you have been unsubscribed. You will no longer receive SMS messages from us.</li>
+              <li><strong>Customer Care (HELP):</strong> If you are experiencing issues with the messaging program, reply with the keyword <strong>"HELP"</strong> for assistance, or contact us directly at support@approvalhq.com.</li>
               <li><strong>Carrier Liability:</strong> Mobile carriers (e.g., T-Mobile, AT&T, Verizon) are not liable for delayed or undelivered messages.</li>
             </ul>
           </div>
@@ -101,22 +101,22 @@ export default function Terms() {
 
             <h3 className="text-xl font-bold text-white mb-3">2. Funding Applications and Credit Reviews</h3>
             <p className="mb-4">
-              Submitting an application does not guarantee funding. Fanscom Funding LLC evaluates business performance, revenue trajectory, and general cash flow. While we focus heavily on business metrics, we may perform soft credit inquiries for identity verification and risk assessment. These soft pulls do not impact your personal credit score.
+              Submitting an application does not guarantee funding. ApprovalHQ LLC evaluates business performance, revenue trajectory, and general cash flow. While we focus heavily on business metrics, we may perform soft credit inquiries for identity verification and risk assessment. These soft pulls do not impact your personal credit score.
             </p>
 
             <h3 className="text-xl font-bold text-white mb-3">3. Intellectual Property</h3>
             <p className="mb-4">
-              All content, logos, trademarks, and design elements on this website are the exclusive property of Fanscom Funding LLC. You may not reproduce, distribute, or create derivative works from our intellectual property without express written consent.
+              All content, logos, trademarks, and design elements on this website are the exclusive property of ApprovalHQ LLC. You may not reproduce, distribute, or create derivative works from our intellectual property without express written consent.
             </p>
 
             <h3 className="text-xl font-bold text-white mb-3">4. Limitation of Liability</h3>
             <p className="mb-4">
-              To the maximum extent permitted by law, Fanscom Funding LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, revenue, or data, arising out of your use of our website or funding services. Our services are provided on an "as-is" and "as-available" basis without any warranties of any kind.
+              To the maximum extent permitted by law, ApprovalHQ LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, revenue, or data, arising out of your use of our website or funding services. Our services are provided on an "as-is" and "as-available" basis without any warranties of any kind.
             </p>
 
             <h3 className="text-xl font-bold text-white mb-3">5. Indemnification</h3>
             <p className="mb-4">
-              You agree to indemnify, defend, and hold harmless Fanscom Funding LLC, its officers, directors, employees, and agents from any claims, liabilities, damages, and expenses (including legal fees) arising from your misuse of our services, violation of these Terms, or infringement of any third-party rights.
+              You agree to indemnify, defend, and hold harmless ApprovalHQ LLC, its officers, directors, employees, and agents from any claims, liabilities, damages, and expenses (including legal fees) arising from your misuse of our services, violation of these Terms, or infringement of any third-party rights.
             </p>
 
             <h3 className="text-xl font-bold text-white mb-3">6. Governing Law and Dispute Resolution</h3>

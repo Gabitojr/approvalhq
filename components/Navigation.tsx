@@ -10,7 +10,7 @@ export default function Navigation() {
           <Link href="/" className="inline-block">
             <Image
               src="/logo2.png"
-              alt="Fanscom Funding Logo"
+              alt="ApprovalHQ Logo"
               className="h-16 w-auto object-contain"
               width={200}
               height={200}
@@ -18,24 +18,24 @@ export default function Navigation() {
           </Link>
         </div>
         <div className="hidden md:flex gap-8 items-center justify-center flex-1">
-          <Link href="/#eligibility" className="text-slate-300 hover:text-[#F5C518] transition font-medium">
+          <Link href="/#eligibility" className="text-slate-300 hover:text-[#6366F1] transition font-medium">
             Qualifications
           </Link>
-          <Link href="/#process" className="text-slate-300 hover:text-[#F5C518] transition font-medium">
+          <Link href="/#process" className="text-slate-300 hover:text-[#6366F1] transition font-medium">
             How it Works
           </Link>
-          <Link href="/#features" className="text-slate-300 hover:text-[#F5C518] transition font-medium">
+          <Link href="/#features" className="text-slate-300 hover:text-[#6366F1] transition font-medium">
             Benefits
           </Link>
-          <Link href="/#faq" className="text-slate-300 hover:text-[#F5C518] transition font-medium">
+          <Link href="/#faq" className="text-slate-300 hover:text-[#6366F1] transition font-medium">
             FAQ
           </Link>
-          <Link href="/#contact" className="text-slate-300 hover:text-[#F5C518] transition font-medium">
+          <Link href="/#contact" className="text-slate-300 hover:text-[#6366F1] transition font-medium">
             Contact
           </Link>
         </div>
         <Link href="/#contact" className="inline-block">
-          <button className="bg-[#F5C518] text-[#0B1120] px-6 py-2 rounded-lg hover:bg-yellow-500 transition font-bold shadow-md">
+          <button className="bg-[#6366F1] text-white px-6 py-2 rounded-lg hover:bg-indigo-600 transition font-bold shadow-md">
             Get Funded
           </button>
         </Link>

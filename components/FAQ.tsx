@@ -29,7 +29,7 @@ export default function FAQ() {
             <details key={i} className="bg-[#151E32] rounded-xl p-6 border border-slate-800 group cursor-pointer">
               <summary className="font-bold text-white flex justify-between items-center outline-none">
                 {item.q}
-                <span className="text-[#F5C518] inline-block transition group-open:rotate-180 font-bold">▼</span>
+                <span className="text-[#6366F1] inline-block transition group-open:rotate-180 font-bold">▼</span>
               </summary>
               <p className="text-slate-400 mt-4 leading-relaxed">{item.a}</p>
             </details>
