@@ -3,8 +3,8 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "ApprovalHQ | 10DLC Application Platform",
-  description: "ApprovalHQ streamlines your 10DLC registration and campaign approval process. Fast, compliant, and built for scale.",
+  title: "ApprovalHQ | Financial Funding for Your Company",
+  description: "ApprovalHQ helps your company to get financial funding.",
 }
 
 export default function RootLayout({
